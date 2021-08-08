@@ -64,14 +64,6 @@ main{
     font-size: 1.5em;
 }
 
-#left-div{
-
-}
-
-#right-div{
-
-}
-
 #vs{
     margin: 15px 2em 0px 2em;
     font-size: 3em;
@@ -130,4 +122,38 @@ footer button{
     font-size: 2em;
     margin-bottom: 0.8em;
     
+}
+
+@media (max-width: 650px){
+    #vs{
+        margin: 1em;
+    }
+
+    :root{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+    :root{
+        font-size: 10px;
+    }
+
+    #vs{
+        margin: 0.5em;
+    }
+
+    .choice-btn{
+        padding: 0.8em 1.5em;
+    }
+
+    main{
+        flex-direction: column;
+    }
 }
