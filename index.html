@@ -8,22 +8,27 @@
 	<title>JS</title>
 </head>
 <body>
+	<div id="overlay" class="hide">
+		<h2 id="game-result">Result</h2>
+		<button class="choice-btn" id="restart">Play again</button>
+	</div>
+
 	<div id="container">
 		<header><h1 class="big-text">Round <span id="round-count">1</span></h1></header>
 		<main>
 			<div id="left-div" class="box-cont">
-				<h2 class="big-text" id="player-choice">Player</h2>
-				<button class="choice-btn">Click Me</button>
+				<h2 class="big-text">Player : <span id="p-score">0</span></h2>
+				<button class="choice-btn" id="player-choice">Click Me</button>
 			</div>
 			<h2 class="big-text" id="vs">VS</h2>
 			<div id="right-div" class="box-cont">
-				<h2 class="big-text" id="computer-choice">Computer</h2>
-				<button class="choice-btn">Don't Click</button>
+				<h2 class="big-text">Computer : <span id="c-score">0</span></h2>
+				<button class="choice-btn" id="computer-choice">Don't Click</button>
 			</div>
 		</main>
 		<footer>
-			<button class="choice-btn">Start</button>
-			<h3 class="big-text" id="game-info">Click The button at left to choose your weapon</h3>
+			<h3 class="big-text" id="game-info">Click The button at left to choose your weapon, the hit start.</h3>
+			<button class="choice-btn" id="start-btn">Start</button>
 		</footer>
 	</div>
 </body>
