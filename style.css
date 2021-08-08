@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Lora;
+    src: url(fonts/Lora.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 15px;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
+}
+
+#container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 7fr 2fr;
+    font-size: 1rem;
+}
+
+header{
+    text-align: center;
+    padding: 1em;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.big-text{
+    font-family: lora;
+    color: #323232;
+}
+
+.box-cont{
+    margin: 10px;
+    text-align: center;
+}
+
+.box-cont h2{
+    margin-bottom: 1em;
+}
+
+#left-div{
+
+}
+
+#right-div{
+
+}
+
+#vs{
+    margin: 15px 2em 0px 2em;
+    font-size: 3em;
+}
+
+.choice-btn{
+    background-color: white;/*#e7e4e4;*/
+    padding: 10px 2.3em;
+    border-color: #dadada;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;
+    border-radius: 0px;
+    font-family: poppins;
+    font-size: 1.2em;
+    transition: border-width 0.1s;
+    outline: 1px solid #dadada;
+}
+
+.choice-btn:hover{
+    color: #303030;
+    cursor: pointer;
+}
+
+.choice-btn:active{
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer button{
+    padding: 0.5em 1.5em;
+}

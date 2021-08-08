@@ -53,7 +53,3 @@ function game(){
         return "Computer Wins The Game!";
     }
 }
-
-
-
-console.log(game());
