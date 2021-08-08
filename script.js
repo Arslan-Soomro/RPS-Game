@@ -1,20 +1,3 @@
-/*
-
-function playerPlay(){
-    let choice = prompt("Choose Rock, Paper or Scissors").toLowerCase();
-    switch(choice){
-        case 'rock':
-            return 'Rock';
-        case 'paper':
-            return 'Paper';  
-        default:
-            return 'Scissors';
-    }
-}
-
-*/
-
-
 const roundCount = document.querySelector("#round-count");
 const playerChoice = document.querySelector("#player-choice");
 const computerChoice = document.querySelector("#computer-choice");
@@ -129,6 +112,8 @@ restartBtn.addEventListener('click', () => {
     computerChoice.textContent = "Don't Click";
     roundCount.textContent = '1';
     gameInfo.textContent = 'Click The button at left to choose your weapon, the hit start.';
+    pScore.textContent = playerScore;
+    cScore.textContent = computerScore;
 
     document.querySelector("#overlay").style.display = 'none';
 
